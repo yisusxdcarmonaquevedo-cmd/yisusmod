@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yisus Mod — mods para tus juegos</title>
+<meta name="description" content="Mods de videojuegos hechos por Yisus. Descarga directa desde la web, instalación explicada paso a paso, gratis y sin cuentas.">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e1116" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2314538d'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='system-ui,sans-serif' font-size='19' font-weight='700' fill='%23ffffff'%3EY%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<a class="saltar" href="#catalogo">Saltar al catálogo</a>
+
+<!-- =================== CABECERA =================== -->
+<header class="top">
+  <div class="wrap top__in">
+    <a class="marca" href="#inicio">
+      <span class="marca__ico" aria-hidden="true">Y</span>
+      Yisus Mod
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#catalogo">Mods</a>
+      <a href="#instalacion">Cómo se instalan</a>
+      <a href="#online">Aviso online</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+
+  <!-- =================== PORTADA =================== -->
+  <section class="hero">
+    <div class="wrap">
+      <h1>Mods para tus juegos, listos para descargar.</h1>
+      <p class="hero__lead">Los hago yo, los pruebo yo y los cuelgo aquí. Te los bajas, se instalan en dos clics y a jugar.</p>
+      <ul class="hero__puntos">
+        <li><span class="punto" aria-hidden="true"></span> Descarga directa desde la propia web</li>
+        <li><span class="punto" aria-hidden="true"></span> Instalación explicada paso a paso</li>
+        <li><span class="punto" aria-hidden="true"></span> Gratis y sin cuentas</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- =================== CATÁLOGO =================== -->
+  <section class="seccion" id="catalogo" aria-labelledby="h-catalogo">
+    <div class="wrap">
+      <div class="seccion__cab">
+        <span class="eyebrow">Catálogo</span>
+        <h2 id="h-catalogo">Todos los mods</h2>
+        <p>Abre la ficha de un mod para ver capturas, requisitos y pasos antes de descargar nada.</p>
+      </div>
+
+      <div class="rejilla" id="rejilla"><!-- lo rellena assets/app.js con los datos de mods.js --></div>
+
+      <noscript>
+        <div class="nota nota--info">
+          <div>
+            <h3>El catálogo necesita JavaScript</h3>
+            <p>La lista de mods se monta con un archivo JavaScript local (nada de servidores ni de rastreo). Actívalo y vuelve a cargar la página, o busca los archivos directamente en la carpeta <code>descargas/</code>.</p>
+          </div>
+        </div>
+      </noscript>
+    </div>
+  </section>
+
+  <!-- =================== CÓMO SE INSTALAN =================== -->
+  <section class="seccion seccion--suave" id="instalacion" aria-labelledby="h-instalacion">
+    <div class="wrap">
+      <div class="seccion__cab">
+        <span class="eyebrow">Antes de empezar</span>
+        <h2 id="h-instalacion">Cómo se instalan los mods</h2>
+        <p>No hay que tocar carpetas del juego ni saber nada raro. La mayoría se bajan como una aplicación que hace todo sola; alguno viene en ZIP con su instalador dentro. Cada ficha lo dice.</p>
+      </div>
+
+      <ol class="pasos" role="list">
+        <li class="paso">
+          <h3>Descarga el mod</h3>
+          <p>Con el botón de su ficha. El archivo sale directo de esta web, sin pasar por otra página ni por acortadores.</p>
+        </li>
+        <li class="paso">
+          <h3>Ábrelo</h3>
+          <p>Si es una aplicación, doble clic y ya. Si es un ZIP, primero clic derecho y «Extraer todo»: no ejecutes nada desde dentro del ZIP, porque Windows lo abre en una carpeta temporal y el instalador no encuentra el juego.</p>
+        </li>
+        <li class="paso">
+          <h3>Instalar</h3>
+          <p>Encuentra el juego él solo, no tienes que buscar ninguna carpeta. Cierra el juego antes, si lo tenías abierto.</p>
+        </li>
+        <li class="paso">
+          <h3>A jugar</h3>
+          <p>Y ya está. Si algo va mal, se desinstala desde la misma aplicación y el juego vuelve a estar como antes.</p>
+        </li>
+      </ol>
+
+      <div class="nota">
+        <div>
+          <h3>Windows te va a avisar, y es normal</h3>
+          <p>Al abrirlo puede saltar la pantalla azul de SmartScreen diciendo «Windows protegió tu PC». Sale con cualquier archivo descargado de internet que no esté firmado por una empresa, no es que el archivo esté roto. Pulsa «Más información» y luego «Ejecutar de todas formas». Si prefieres asegurarte antes, súbelo a VirusTotal.</p>
+        </div>
+      </div>
+
+      <div class="nota nota--info">
+        <div>
+          <h3>Para desinstalar, no hace falta nada raro</h3>
+          <p>En Steam: clic derecho en el juego, Propiedades, Archivos instalados, Verificar integridad. Te deja el juego como estaba. Y si quieres ir sobre seguro, copia la carpeta del juego a otro sitio antes de instalar: son dos minutos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== AVISO DEL ONLINE =================== -->
+  <section class="seccion" id="online" aria-labelledby="h-online">
+    <div class="wrap">
+      <div class="seccion__cab">
+        <span class="eyebrow">Aviso importante</span>
+        <h2 id="h-online">En online lo necesitáis TODOS</h2>
+      </div>
+
+      <div class="aviso-online">
+        <p class="aviso-online__clave">Si vais a jugar en red, el mod tiene que estar instalado en el PC de cada jugador. Sin excepciones.</p>
+        <p>Estos juegos calculan la partida en la máquina de cada uno a la vez. Una copia sin modificar ni siquiera sabe representar a un quinto jugador, así que si a alguien le falta el mod la sala no cuadra y la partida no tira.</p>
+        <p>Lo más fácil: pásale a tu grupo el enlace de esta página antes de montar la sala y que se lo instale cada uno. Aseguraos además de tener todos la <strong>misma versión</strong> del mod.</p>
+        <p>Esto vale para cualquier mod que cambie cómo funciona una partida en red. En la ficha de cada mod lo pone bien claro.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- =================== PIE =================== -->
+<footer class="pie">
+  <div class="wrap pie__in">
+    <p><strong>Yisus Mod</strong> — mods no oficiales hechos por un jugador. No estoy asociado con los estudios ni con las editoras de los juegos. Úsalos bajo tu responsabilidad.</p>
+    <p><a href="#inicio">Volver arriba</a></p>
+  </div>
+</footer>
+
+<!-- =================== FICHA DEL MOD ===================
+     Cabecera fija, cuerpo con scroll propio y pie fijo: el botón de
+     descarga se queda siempre a la vista por mucho que bajes. -->
+<dialog id="detalle" aria-labelledby="detalle-titulo">
+  <div class="hoja">
+    <div class="hoja__top">
+      <h2 class="hoja__titulo" id="detalle-titulo">Ficha del mod</h2>
+      <button class="cerrar" type="button" data-cerrar>Cerrar</button>
+    </div>
+    <div class="hoja__cuerpo" id="detalle-cuerpo"></div>
+    <div class="hoja__pie" id="detalle-pie"></div>
+  </div>
+</dialog>
+
+<!-- Primero los datos, después la lógica. Scripts normales (nada de
+     type="module") para que esto funcione también con doble clic. -->
+<script src="mods.js"></script>
+<script src="assets/app.js"></script>
+
+</body>
+</html>
