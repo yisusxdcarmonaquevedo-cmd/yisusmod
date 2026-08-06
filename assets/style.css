@@ -193,13 +193,12 @@ section[id], div[id]{ scroll-margin-top:88px; }
   font-weight:700; font-size:1.0625rem; letter-spacing:-.02em;
   color:var(--text); text-decoration:none;
 }
+/* El logo ya trae su propio fondo y esquinas redondeadas, asi que aqui solo se
+   dimensiona: nada de background ni border-radius encima. */
 .marca__ico{
   width:28px; height:28px; flex:none;
-  border-radius:7px;
-  background:var(--accent); color:var(--on-accent);
-  display:grid; place-items:center;
-  font-family:var(--mono);
-  font-size:.875rem; font-weight:700; letter-spacing:0;
+  display:block;
+  object-fit:contain;
 }
 
 .nav{ display:flex; flex-wrap:wrap; align-items:center; gap:2px; }
