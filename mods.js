@@ -60,7 +60,7 @@ const MODS = [
     id: "bopl-8-players",
     nombre: "Bopl Battle 8 Players",
     juego: "Bopl Battle",
-    version: "1.1.1",
+    version: "1.1.2",
     peso: "0,69 MB",
     sistema: "Windows",
     estado: "disponible",
@@ -114,7 +114,7 @@ const MODS = [
       }
     ],
 
-    descarga: "descargas/YisusMod-BoplBattle-1.1.1.exe"
+    descarga: "descargas/YisusMod-BoplBattle-1.1.2.exe"
   },
 
   /* ------------------------------------------------------------------
