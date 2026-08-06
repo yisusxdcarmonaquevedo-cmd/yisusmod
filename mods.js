@@ -65,28 +65,28 @@ const MODS = [
     sistema: "Windows",
     estado: "disponible",
 
-    resumen: "Sube el límite de 4 a 8 jugadores en el mismo PC, con sus 8 huecos, 8 colores y 8 equipos. El online sigue siendo de 4.",
+    resumen: "Sube el límite de 4 a 8 jugadores, en el mismo PC y por internet con invitación de Steam.",
 
     descripcion: [
-      "Bopl Battle viene capado a 4 jugadores. Este mod levanta el tope hasta 8 en partida local: aparecen los ocho huecos en la pantalla de selección de personaje, cada uno con su color y su equipo, y la partida los aguanta sin que tengas que tocar nada más. El resto del juego se queda igual: mismos mapas, mismas habilidades, mismo caos, solo que con el doble de gente.",
+      "Bopl Battle viene capado a 4 jugadores. Este mod levanta el tope hasta 8: aparecen los ocho huecos en la pantalla de selección de personaje, cada uno con su color y su equipo, y la partida los aguanta sin que tengas que tocar nada más. El resto del juego se queda igual: mismos mapas, mismas habilidades, mismo caos, solo que con el doble de gente.",
 
-      "El online sigue siendo de 4 y quiero ser claro con por qué, porque es la pregunta que me hace todo el mundo. Bopl Battle calcula la partida entera en cada ordenador a la vez y por la red solo viajan las pulsaciones. El problema es que las mete todas en una estructura con exactamente cuatro huecos: cuando llega el turno de montar cada fotograma, las teclas del quinto jugador en adelante se descartan. Ese quinto entra en la sala y se le crea el personaje, pero no recibe ni una pulsación y se queda congelado. No es cosa de la sala de Steam ni de que falte el mod en algún PC: es la propia simulación del juego. Hasta que eso esté resuelto, el mod deja la sala online en 4 a propósito, para que no se rompan partidas.",
+      "Funciona en local (varios mandos en el mismo ordenador) y por internet, invitando por Steam como siempre. Para las partidas por internet hizo falta trabajo de fontanería: el juego calcula la partida entera en cada ordenador a la vez y solo se envían las pulsaciones, pero las metía en una estructura con cuatro huecos justos y las del quinto jugador en adelante se tiraban por el camino. El mod añade un canal aparte para esas pulsaciones y las entrega en el mismo instante de simulación en todas las máquinas, que es lo que hace falta para que nadie se desincronice.",
 
       "Se descarga como una sola aplicación: la abres, le das a «Instalar / Reparar» y a JUGAR. Desde ahí lanzas el juego, cambias el número de jugadores o apagas el mod para echar una partida normal, sin desinstalar nada."
     ],
 
     aviso: {
-      corto: "Los 8 jugadores son en el mismo PC",
-      titulo: "8 en local, 4 en online",
-      texto: "Los ocho huecos son para jugar en el mismo ordenador, con un mando por persona. El teclado y el ratón cuentan como un jugador, así que para llegar a 8 hacen falta 7 mandos. Por internet el juego sigue siendo de 4 y el mod no lo cambia: su simulación solo transporta las pulsaciones de cuatro jugadores, y el quinto se quedaría quieto. Estoy en ello."
+      corto: "Para el online, el mod en TODOS los PCs",
+      titulo: "En online lo necesitáis todos, y avisadme si algo falla",
+      texto: "Por internet, los ocho tenéis que tener el mod y la misma versión. Una copia sin modificar ni siquiera sabe representar a un quinto jugador, así que si a alguien le falta, la sala no cuadra. Pasadle el enlace de esta página a todo el grupo antes de montar la partida. Y una cosa con honestidad: lo de más de 4 por internet es lo más nuevo y lo más delicado del mod, porque toca la parte que mantiene sincronizadas todas las máquinas. Está probado todo lo que se puede probar sin juntar a ocho personas, pero si os pasa algo raro (alguien que no se mueve, la partida que se corta sola), avisadme con el archivo BepInEx\\LogOutput.log de un par de vosotros y lo arreglo. En local con 8 lleva funcionando desde el principio."
     },
 
     requisitos: [
       "Bopl Battle en PC, versión de Steam (vale la demo gratuita y el juego completo).",
       "Windows 10 u 11. No hace falta instalar nada más.",
       "Permiso de escritura en la carpeta del juego (que no esté en una unidad protegida).",
-      "Para jugar 8: 7 mandos, porque el teclado y el ratón cuentan como un jugador.",
-      "Los 8 juegan en el mismo ordenador. Por internet siguen siendo 4."
+      "Para jugar 8 en el mismo PC: 7 mandos, porque el teclado y el ratón cuentan como uno.",
+      "Para jugar 8 por internet: el mod instalado y la misma versión en los 8 ordenadores."
     ],
 
     instalacion: [
