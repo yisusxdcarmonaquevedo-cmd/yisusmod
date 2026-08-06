@@ -116,29 +116,62 @@ const MODS = [
   },
 
   /* ------------------------------------------------------------------
-     2 · Yisus Mod para R.E.P.O.  (todavía sin subir)
+     2 · Yisus Mod para R.E.P.O.
      ------------------------------------------------------------------ */
   {
     id: "repo-yisus",
     nombre: "Yisus Mod para R.E.P.O.",
     juego: "R.E.P.O.",
-    version: "—",
-    peso: "—",
+    version: "1.0.0",
+    peso: "0,71 MB",
     sistema: "Windows",
-    estado: "proximamente",
+    estado: "disponible",
 
-    resumen: "Todavía está en el horno. Cuando funcione bien y no rompa nada, aparece aquí con su botón de descarga.",
+    resumen: "Panel dentro del juego (tecla F1) para generar monstruos, objetos, dinero y armas modificadas, controlar la vida y las mejoras de los jugadores, y subir la sala de 6 hasta 32 personas. Necesita clave de activación.",
 
     descripcion: [
-      "Estoy trasteando con R.E.P.O. y de ahí saldrá el próximo mod. Aún no está para colgarlo: prefiero subirlo cuando funcione siempre y no cuando funcione «a veces».",
-      "En cuanto esté, aparecerá aquí mismo con su ZIP, sus capturas y sus pasos de instalación, igual que el resto."
+      "Convierte una partida de R.E.P.O. en una caja de arena. Pulsas F1 dentro del juego y se abre un panel con seis pestañas: Monstruos, Armas y objetos, Valiosos y dinero, Mejoras, Especiales y Ayuda. Mientras lo tienes abierto tu personaje se queda quieto para que el ratón funcione bien.",
+
+      "Lo que hace, sin adornos: generas cualquier enemigo del juego (hasta 10 por clic), los matas a todos o los borras del nivel. Te das cualquier arma, granada, dron o botiquín. Creas objetos de valor y bolsas de dinero con la cifra que escribas, hasta 999.999 por bolsa. Sobre cualquier jugador de la sala: le ves la vida, lo curas, lo revives, lo matas, lo expulsas o le tocas sus trece mejoras. Y tienes once armas modificadas: cadencia por cinco, escopetas de quince perdigones, láser en abanico, granada gigante, granada en cadena.",
+
+      "Casi todo eso solo funciona si eres el anfitrión o juegas solo; el juego no deja que un invitado genere cosas ni toque a los demás. Como invitado te quedan la inmunidad al daño y tus propias mejoras. Pero ojo con esto: los demás NO necesitan tener el mod para que les afecte, porque usa los mismos mensajes de red que el propio juego.",
+
+      "También sube el límite de la sala. De serie R.E.P.O. son 6; aquí puedes llegar a 32 (viene en 20). Para que funcione, el anfitrión y todos los que entren tienen que tener el mod y el MISMO número puesto: si uno lo tiene en 20 y otro en 12, no cuadra. El juego no está pensado para tanta gente, así que con salas muy llenas el rendimiento cae.",
+
+      "Hace falta una clave de activación que doy yo. Cada clave vale para un solo ordenador y las temporales caducan a las 24 horas. El lanzador comprueba la clave contra el servidor CADA vez que lo abres, así que necesitas internet siempre, no solo la primera vez.",
+
+      "Qué se instala y dónde: el mod va a tu carpeta de usuario junto con BepInEx y Unity Doorstop, que son las herramientas normales para cargar mods en juegos de Unity, y se copia un winhttp.dll en la carpeta de R.E.P.O. Nada más. Dentro del juego el mod no se conecta a ningún sitio: todo se queda entre los jugadores de la sala."
     ],
 
-    aviso: null,
-    requisitos: [],
-    instalacion: [],
+    aviso: {
+      corto: "Para jugar con amigos, no con desconocidos",
+      titulo: "Este mod te da poder sobre los demás jugadores de la sala",
+      texto: "Siendo anfitrión puedes, con un clic, matar a cualquiera saltándote su inmunidad, dejarle a cero las trece mejoras que se ha ganado en la partida, expulsarlo, soltarle cientos de monstruos encima o encender de golpe todas las granadas del mapa, incluidas las que otro lleve en la mano. Todo eso le afecta aunque no tenga el mod, y no puede evitarlo ni deshacerlo. Entre amigos que saben a qué juegan es una gamberrada; en una sala con desconocidos es arruinarles la partida. Dos ajustes vienen activados de fábrica y conviene saberlo: la sala se mantiene abierta mientras estás en la tienda (si tu partida es pública, puede entrarte gente que no conoces justo en ese momento), y la varita void suelta una explosión al cerrarse el agujero, también cuando la usa otro jugador con una varita normal. Y el dinero y las mejoras que regales se quedan en la partida: si os importa la progresión, no lo uséis en vuestra run buena."
+    },
+
+    requisitos: [
+      "Windows 10 u 11 de 64 bits.",
+      "R.E.P.O. comprado e instalado en Steam (el mod encuentra el juego solo).",
+      "Steam abierto antes de darle a jugar.",
+      "Clave de activación que doy yo, válida para un solo ordenador.",
+      "Conexión a internet cada vez que abras el lanzador, no solo la primera.",
+      "Permiso de administrador una vez, si el juego está en una carpeta protegida.",
+      "Para partidas de más de 6: el mod y el mismo número de jugadores en todos los que entren."
+    ],
+
+    instalacion: [
+      "Descarga el archivo y guárdalo donde quieras. No hay que descomprimir nada.",
+      "Ábrelo. Windows mostrará el aviso de SmartScreen: pulsa «Más información» y luego «Ejecutar de todas formas». Sale porque el programa no está firmado, no porque tenga nada raro.",
+      "El lanzador busca R.E.P.O. en tus bibliotecas de Steam. Si no lo encuentra, pulsa «Elegir carpeta del juego».",
+      "Escribe la clave de activación cuando te la pida. Se guarda cifrada, así que no tendrás que volver a escribirla en ese ordenador.",
+      "Si el juego está en Archivos de programa, acepta el aviso de administrador: solo lo necesita para copiar el cargador.",
+      "El lanzador instala el mod y arranca R.E.P.O. por Steam él solo. A partir de ahí, entra siempre por el lanzador y no por Steam directamente.",
+      "Ya en la partida, pulsa F1. Si ves el rótulo «Yisus mod · F1» en la esquina, ha cargado bien.",
+      "Para quitarlo: borra winhttp.dll de la carpeta de R.E.P.O. y, si quieres dejarlo limpio, la carpeta YisusMod de tu perfil de usuario."
+    ],
+
     capturas: [],
-    descarga: null
+    descarga: "descargas/YisusMod-REPO-1.0.0.exe"
   }
 
 ];
